@@ -1,11 +1,12 @@
 module.exports = {
-  mode: "",
-  purge: ["/index.html"],
+  mode: "jit",
+  purge: ["./index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: (theme) => ({
         hero: "url('assets/img/wall1.png')",
+        foteuh: "url('assets/img/foteuh.png')",
       }),
 
       spacing: {

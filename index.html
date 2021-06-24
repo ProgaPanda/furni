@@ -5,44 +5,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="tailwind.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <link href="index.css" rel="stylesheet">
-
+  <link href="css/styles.css" rel="stylesheet">
   <title>Furni</title>
 </head>
 
-<body class="text-gray-400 text-shadow">
-  <section class="h-full bg-cover bg-hero">
-    <header class="relative flex flex-col justify-between h-screen pt-10 px-36">
-      <section class="flex justify-between">
-        <img src="assets/img/logo.png" alt="furni logo" class="w-20 h-20">
+<body class="text-[#d9cdc2] ">
+  <section
+    class="relative z-10 flex flex-col justify-between h-full px-10 pt-10 bg-cover shadow-2xl lg:h-screen bg-hero lg:px-36 text-shadow">
+    <div class="flex flex-col items-center justify-between lg:flex-row">
+      <img src="assets/img/logo.png" alt="furni logo" class="w-20 h-20 mb-20 lg:mb-0">
 
-        <nav class="flex space-x-16 text-sm uppercase list-none">
-          <a href="#">
-            <li>Home</li>
-          </a>
-          <a href="#">
-            <li>Who we are</li>
-          </a>
-          <a href="#">
-            <li>Products</li>
-          </a>
-          <a href="#">
-            <li>Contacts</li>
-          </a>
-        </nav>
-      </section>
+      <nav class="flex space-x-5 text-sm uppercase list-none md:space-x-16">
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#who">
+          <li>Who we are</li>
+        </a>
+        <a href="#">
+          <li>Products</li>
+        </a>
+        <a href="#">
+          <li>Contacts</li>
+        </a>
+      </nav>
+    </div>
 
-      <section class="flex flex-row-reverse mb-28">
-        <p class="text-2xl text-shadow">
-          Our Products style, clean and functionality make them easy<br />
-          for fit in different interiors. The fine work, the perfect details<br />
-          and the strength of wood create timeless furniture pieces<br />
-          the longer they are used, the more beautiful they become.
-        </p>
-      </section>
-    </header>
+    <div class="flex flex-row-reverse">
+      <p class="text-[1.25rem] md:text-[1.5rem] text-shadow mt-[10rem] mb-14 lg:mt-0 lg:w-[60%]">
+        Our Products style, clean and functionality make them easy
+        for fit in different interiors. The fine work, the perfect details
+        and the strength of wood create timeless furniture pieces
+        the longer they are used, the more beautiful they become.
+      </p>
+    </div>
+  </section>
+
+  <section id="who" class="relative lg:pt-24">
+    <div class="relative flex flex-col lg:flex-row">
+      <div class="hidden lg:w-[65%] lg:block">
+        <img src="assets/img/foteuh.png" alt="foteuh">
+      </div>
+      <h1 class="hidden lg:block text-[3rem] lg:text-[9rem] uppercase -ml-48 text-[#aaa097]">SitWith <br /> Luxury</h1>
+
+      <div class="w-full lg:w-[50%] lg:absolute lg:mt-[26rem] lg:right-0">
+        <img src="assets/img/texture1.png" alt="foteuh" class="h-full lg:h-auto">
+
+        <div class="absolute w-full h-full px-5 space-y-20 lg:space-y-0 top-10">
+          <h1 class="lg:hidden text-[4rem] lg:text-[9rem] uppercase text-[#aaa097]">SitWith <br /> Luxury</h1>
+          <p class="lg:absolute left-10 text-[1.25rem] md:text-[1.5rem]">
+            Our Products style, clean and functionality make them easy
+            for fit in different interiors. The fine work, the perfect details
+            and the strength of wood create timeless furniture pieces
+            the longer they are used, the more beautiful they become.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
 </body>

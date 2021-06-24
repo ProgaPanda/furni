@@ -1,14 +1,13 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "SET TAILWIND_MODE=watch postcss&&vite",
+    "dev": "SET TAILWIND_MODE=watch&&vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
-    "postcss": "^8.3.5",
-    "tailwindcss": "^2.2.2",
+    "tailwindcss": "^2.2.4",
     "vite": "^2.3.8"
   }
 }
