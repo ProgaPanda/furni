@@ -25,7 +25,16 @@
   src: url(../assets/fonts/angelic.ttf);
 }
 
+@font-face {
+  font-family: giveaway;
+  src: url(../assets/fonts/giveaway.ttf);
+}
+
 html,
 body {
   font-family: angelic;
+}
+
+#products {
+  font-family: giveaway;
 }
