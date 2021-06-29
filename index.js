@@ -43,5 +43,5 @@ window.onload = () => {
 
 const setImageSrc = () => {
   const slider = document.querySelector("#slider");
-  slider.src = `assets/img/gallery/${galleryId}/${counter}.png`;
+  slider.src = `/img/gallery/${galleryId}/${counter}.png`;
 };
