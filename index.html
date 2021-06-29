@@ -121,17 +121,17 @@
     </div>
     <div class="w-full lg:w-[40%]">
       <p class="mb-6 text-4xl text-[#aaa097]">Contact Us</p>
-      <form class="flex flex-col space-y-4" action="#">
-        <input type="text" name="name" placeholder="Full Name"
+      <form class="flex flex-col space-y-4" name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Full Name" required
           class="px-4 py-3 bg-[#aaa097] text-[#222222] placeholder-[#474747] rounded-2xl ">
-        <input type=" text" name="email" placeholder="Email"
+        <input type=" text" name="email" placeholder="Email" required
           class="px-4 py-3 bg-[#aaa097] text-[#222222] placeholder-[#474747] rounded-2xl ">
         <input type=" text" name="subject" placeholder="Subject"
           class="px-4 py-3 bg-[#aaa097] text-[#222222] placeholder-[#474747] rounded-2xl ">
-        <textarea rows="4" name="message" placeholder="Message"
+        <textarea rows="4" name="message" placeholder="Message" required
           class="px-4 py-3 bg-[#222222] text-[#d1c7be] placeholder-[#99928c] rounded-2xl "></textarea>
 
-        <button class="px-4 py-2 bg-[#aaa097] text-[#222222] lg:w-[25%] rounded-xl ">
+        <button type="submit" class="px-4 py-2 bg-[#aaa097] text-[#222222] lg:w-[25%] rounded-xl ">
           Submit
         </button>
 
