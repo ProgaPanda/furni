@@ -121,7 +121,13 @@
     </div>
     <div class="w-full lg:w-[40%]">
       <p class="mb-6 text-4xl text-[#aaa097]">Contact Us</p>
-      <form class="flex flex-col space-y-4" name="contact" method="POST" data-netlify="true">
+      <form class="flex flex-col space-y-4" name="contact" method="POST" data-netlify="true"
+        netlify-honeypot="bot-field">
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
+
+
         <input type="text" name="name" placeholder="Full Name" required
           class="px-4 py-3 bg-[#aaa097] text-[#222222] placeholder-[#474747] rounded-2xl ">
         <input type=" text" name="email" placeholder="Email" required
