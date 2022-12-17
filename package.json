@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "dev": "SET TAILWIND_MODE=watch&&vite",
+    "dev": "TAILWIND_MODE=watch&&vite",
     "build": "vite build",
     "serve": "vite preview"
   },
